@@ -1,0 +1,12 @@
+
+from random import *
+cnt = 0
+for i in range(1,51):
+    time = randrange(5, 51)
+    if 5 <= time <= 15:
+        print(("[O] {0}'s passenger (Time : {1}minuites").format(i, time))
+        cnt +=1
+    else:
+        print(("[ ] {0}'s passenger (Time : {1}minuites").format(i, time))
+print("Total: {0}people".format(cnt))
+
